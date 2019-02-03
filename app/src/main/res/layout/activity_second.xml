@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+
+    tools:context="com.example.jashzaveri.login.SecondActivity">
+
+
+    <Button
+        android:layout_marginTop="210dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:height="40dp"
+        android:width="200dp"
+
+        android:background="@drawable/mybutton"
+        android:layout_height="wrap_content"
+        android:text="Scanner"
+        android:textColor="#fff"
+        android:id="@+id/scanbtn"/>
+    <Button  android:textColor="#fff"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mybutton"
+        android:height="40dp"
+        android:width="200dp"
+        android:text="Maps"
+        android:onClick="getMaps"/>
+<TextView
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#fff"
+    android:textAlignment="center"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/scanbtn"
+    android:layout_marginTop="50dp"
+    android:height="40dp"
+    android:width="200dp"
+    android:id="@+id/result"/>
+
+    <Button  android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="40dp"
+        android:width="200dp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/mybutton"
+        android:text="Logout"
+        />
+
+</RelativeLayout>

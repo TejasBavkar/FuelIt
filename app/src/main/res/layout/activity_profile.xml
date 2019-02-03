@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@drawable/gradient"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tvProfileName"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="336dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Name: "
+        android:layout_marginTop="100dp"
+        android:textSize="28dp"
+         />
+
+    <TextView
+
+        android:textColor="#fff"
+        android:id="@+id/tvProfileAge"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="208dp"
+        android:text="Age: "
+        android:textSize="28dp"
+         />
+
+    <TextView
+        android:id="@+id/tvProfileEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="196dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Email"
+        android:layout_marginTop="330dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:textSize="22dp"
+         />
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnProfileUpdate"
+       android:background="@drawable/mybutton"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="468dp"
+        android:text="Edit"
+        android:textColor="#fff"
+        />
+
+    <Button
+        android:textColor="#fff"
+        android:id="@+id/btnChangePassword"
+        android:layout_width="200dp"
+        android:height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mybutton"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="398dp"
+        android:text="Change Password"
+         />
+
+</RelativeLayout>
