@@ -89,15 +89,19 @@ public class UpdateProfile extends AppCompatActivity {
                 String age = newUserAge.getText().toString();
                 String email = newUserEmail.getText().toString();
 
+                if(name.equals("") || age.equals("") || email.equals(""))
+                {
+                    Toast.makeText(UpdateProfile.this,"Enter correct credentials",Toast.LENGTH_SHORT).show();
+                }
+                else {
+
+                    UserProfile userProfile = new UserProfile(age, email, name);
+
+                    databaseReference.setValue(userProfile);
 
 
-                UserProfile userProfile = new UserProfile(age, email, name);
-
-                databaseReference.setValue(userProfile);
-
-
-                finish();
-            }
+                    finish();
+                }}
         });
 
 

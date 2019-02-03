@@ -38,7 +38,11 @@ public class UpdatePassword extends AppCompatActivity {
             public void onClick(View view) {
 
                 String userPasswordNew = newPassword.getText().toString();
-
+                    if(userPasswordNew.equals("") || userPasswordNew.length() <6)
+                    {
+                        Toast.makeText(UpdatePassword.this,"Enter password of length 6 or more",Toast.LENGTH_SHORT).show();
+                    }
+                    else{
                     firebaseUser.updatePassword(userPasswordNew).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
@@ -49,7 +53,7 @@ public class UpdatePassword extends AppCompatActivity {
                                 Toast.makeText(UpdatePassword.this, "Password Update Failed", Toast.LENGTH_SHORT).show();
                             }
                         }
-                    });
+                    });}
 
             }
         });
