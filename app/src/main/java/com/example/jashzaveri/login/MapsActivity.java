@@ -156,7 +156,7 @@ LocationListener{
                 dataTransfer[1] = url;
 
                 getNearbyPlacesData.execute(dataTransfer);
-                Toast.makeText(MapsActivity.this, "Showing Nearby Hospitals", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MapsActivity.this, "Showing Nearby Petrol pumps", Toast.LENGTH_SHORT).show();
                 break;
 
         }
